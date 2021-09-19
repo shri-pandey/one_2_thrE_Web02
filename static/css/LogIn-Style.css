@@ -43,6 +43,7 @@ html, body{
     grid-template-columns: 65% 35%;
     height: 100%;
     background: #fff;
+    
 }
 .rows{
     display: grid;
@@ -52,8 +53,9 @@ html, body{
 }
 
 .liquid{
-    background: url('https://media.glassdoor.com/l/31/50/59/e3/acad-blk.jpg');
-    background-size: cover;
+    background: url('https://images.shiksha.com/mediadata/images/articles/1610530031phpW5PfAr.jpeg');
+    background-position-x: center;
+    background-position-y: center;
     background-repeat: no-repeat;
 }
 
