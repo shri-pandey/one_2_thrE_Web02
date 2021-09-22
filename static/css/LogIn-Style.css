@@ -62,7 +62,7 @@ html, body{
 .liquid h4{
     text-align: left;
     padding: 0 2rem;
-    color: whitesmoke;
+    color: rgb(31, 29, 29);
     font-family: var(--Montserrat);
 }
 
@@ -70,9 +70,9 @@ html, body{
 
 .follow{
     padding: 0 1.4rem;
-    padding-top: 1.4rem;
+    padding-top: 1rem;
     font-family: var(--Lobster);
-    color: whitesmoke;
+    color: rgb(31, 29, 29);
     position: relative;
     font-size: .9rem;
 }

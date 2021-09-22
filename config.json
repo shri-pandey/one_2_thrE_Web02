@@ -1,0 +1,17 @@
+{
+  "params":
+  {
+    "local_server": "True",
+    "host": "localhost",
+    "user" : "root",
+    "password" : "",
+    "database" : "tpo_site",
+    "local_uri": "mysql://root:@localhost/tpo_site",
+    "fb_url" : "https://www.facebook.com/aitpune",
+    "website" : "https://www.aitpune.com/",
+    "linkedin" : "https://www.linkedin.com/school/army-institute-of-technology-ait-pune/",
+    "site_name" : "AIT Placement Cell",
+    "mail_user" : "",
+    "mail-password" : ""
+  }
+}
