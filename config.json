@@ -12,6 +12,9 @@
     "linkedin" : "https://www.linkedin.com/school/army-institute-of-technology-ait-pune/",
     "site_name" : "AIT Placement Cell",
     "mail_user" : "",
-    "mail-password" : ""
+    "mail-password" : "",
+    "admin_user" : "tpo@gmail.com",
+    "admin_pass" : "Cheetah",
+    "upload_location" : "T:\\devlok_website\\uploads"
   }
 }
