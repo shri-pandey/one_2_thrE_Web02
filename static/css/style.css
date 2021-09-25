@@ -78,7 +78,9 @@ iframe {
 }
 
 .section-4{
-  background: plum;
+  background-color: #D9AFD9;
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+ 
 }
 
 .box p{
@@ -87,8 +89,9 @@ iframe {
 }
 
 .box h1{
+  color: #000;
   font-size: 50px;
-  text-shadow:  0px 0px 5px #000;
+  text-shadow:  0px 0px 5px rgb(255, 254, 179);
 }
 body {
   font-family: "Open Sans", sans-serif;
@@ -1092,35 +1095,33 @@ code {
     border-top: none;
 }
 
-
-
 /*** RADIAL PROGRESS ***/
 /* Circumference = 2πr */
 /* π = 3.1415926535898 */
 /* r = 35 */
 svg.radial-progress {
-    height: auto;
-    max-width: 200px;
-    padding: 1em;
-    transform: rotate(-90deg);
-    width: 100%;
+  height: auto;
+  max-width: 200px;
+  padding: 1em;
+  transform: rotate(-90deg);
+  width: 100%;
 }
 svg.radial-progress circle {
-    fill: rgba(0,0,0,0);
-    stroke: #fff;
-    stroke-dashoffset: 219.91148575129; /* Circumference */
-    stroke-width: 10;
+  fill: rgba(0,0,0,0);
+  stroke: #fff;
+  stroke-dashoffset: 219.91148575129; /* Circumference */
+  stroke-width: 10;
 }
 svg.radial-progress circle.incomplete {
-    opacity: 0.25;
+  opacity: 0.25;
 }
 svg.radial-progress circle.complete {
-    stroke-dasharray: 219.91148575129; /* Circumference */
+  stroke-dasharray: 219.91148575129; /* Circumference */
 }
 svg.radial-progress text {
-    fill: #1d1f20;
-    font: 400 1em/1 'Oswald', sans-serif;
-    text-anchor: middle;
+  fill: #1d1f20;
+  font: 400 1em/1 'Oswald', sans-serif;
+  text-anchor: middle;
 }
 
 
@@ -1128,34 +1129,30 @@ svg.radial-progress text {
 /*** COLORS ***/
 /* Primary */
 .l svg.radial-progress:nth-of-type(6n+1) circle {
-    stroke: #a2ed56;
+  stroke: #05f305;
 }
 
 /* Secondary */
 .l2 svg.radial-progress:nth-of-type(6n+1) circle {
-    stroke: #83e4e2;
+  stroke: #0633fa;
 }
 
 /* Tertiary */
 .l3 svg.radial-progress:nth-of-type(6n+1) circle {
-    stroke: #fd6470;
+  stroke: #f80116;
 }
 
 /* Quaternary */
 .l4 svg.radial-progress:nth-of-type(6n+1) circle {
-    stroke: #fca858;
+  stroke: #f504cd;
 }
 
-/* Quinary */
-.l5 svg.radial-progress:nth-of-type(6n+1) circle {
-    stroke: #fddc32;
-}
-.l6 svg.radial-progress:nth-of-type(6n+1) circle {
-    stroke: #32d4fd;
-}
+
 /* my code*/
 .cnt{
-    display: flex;
-    height: 20px;
-    width: 100%;
+  display: flex;
+  height: 20px;
+  width: 100%;
 }
+
+
