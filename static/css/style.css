@@ -1,11 +1,12 @@
 .section {
   position: relative;
   width : 100%;
-  height : 700px;
+  height : 550px;
   display: flex;
   align-items:centre;
   overflow: hidden;
 }
+
 
 .section h1 {
   text-align:center;
@@ -21,8 +22,8 @@
 
 .video-container {
   position: absolute;
-  top:0;
-  left:0;
+  top:-50px;
+  left:100;
   height:auto;
   width : 100%;
 }
@@ -89,9 +90,12 @@ iframe {
 }
 
 .box h1{
+  padding-top: 30px;
   color: #000;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
   font-size: 50px;
-  text-shadow:  0px 0px 5px rgb(255, 254, 179);
+  
 }
 body {
   font-family: "Open Sans", sans-serif;
@@ -295,6 +299,9 @@ h1, h2, h3, h4, h5, h6 {
     left: -100%;
   }
   
+  
+
+  
 }
 
 /**
@@ -316,6 +323,8 @@ h1, h2, h3, h4, h5, h6 {
   .navbar ul {
     display: none;
   }
+  
+  
 }
 
 .navbar-mobile {
@@ -476,6 +485,8 @@ h1, h2, h3, h4, h5, h6 {
   #hero .carousel-control-prev, #hero .carousel-control-next {
     width: 5%;
   }
+  
+  
 }
 
 @media (max-width: 768px) {
@@ -485,7 +496,9 @@ h1, h2, h3, h4, h5, h6 {
   #hero h2 {
     font-size: 28px;
   }
+  
 }
+
 
 .hero-waves {
   display: block;
@@ -587,6 +600,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 30px 0;
 }
 
+
 #footer h3 {
   font-size: 36px;
   font-weight: 700;
@@ -669,7 +683,7 @@ h1, h2, h3, h4, h5, h6 {
   flex: 8;
   height: 100%;
   padding: 40px 100px 100px;
-  overflow-y: scroll;
+  overflow-y: hiddem;
   background-color: #A9C9FF;
   background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
 
@@ -1145,6 +1159,15 @@ svg.radial-progress text {
 /* Quaternary */
 .l4 svg.radial-progress:nth-of-type(6n+1) circle {
   stroke: #f504cd;
+}
+.section-4 .row {
+  padding-left: 200px;
+  padding-top: 50px;
+}
+.section-4 h2{
+  font-family: monospace;
+  font-weight: bold;
+ 
 }
 
 

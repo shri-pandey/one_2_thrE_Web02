@@ -178,4 +178,12 @@ def recent_post():
     return render_template('Recent Posts.html', params=params)
 
 
+@app.route("/stud-posts")
+def students_post():
+    return render_template('Students posts.html', params=params)
+
+
+
+
+
 app.run(debug=True)
