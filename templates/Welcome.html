@@ -1,6 +1,13 @@
-{% extends "inner-page.html" %}
+{% extends "admin.html" %}
   {% block body %}
-  <hr>
-  Welcome, {{name}}
-  <hr>
+  <style>
+      .Welcome{
+          margin-top:100px;
+      }
+  </style>
+  <div class="Welcome">
+    <hr>
+    <h1>Welcome, {{name}}</h1>
+    <hr>
+  </Welcome>
   {% endblock %}

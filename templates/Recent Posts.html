@@ -1,4 +1,4 @@
-{% extends "inner-page.html" %}
+{% extends "admin.html" %}
 {% block body %}
 <body>
   <!-- Admin Page Wrapper -->
@@ -25,69 +25,30 @@
             <h1 class="recent-post-title" style="padding-top: 100px;  padding-bottom: 50px;font-weight: bold;">Recent Posts</h1>
 
             <div class="post clearfix">
-              <div class="post-preview">
-                <h2>Internships for TE and BE</h2>
-                <i class="far fa-user"> Ritika</i>
-                &nbsp;
-                <i class="far fa-calendar"> Sept 23, 2021</i>
-                <p class="preview-text">One to line description</p>
-                <div style="padding-left: 750px;">  
-                  <dialog id="myFirstDialog" style="width:50%;background-color:#F4FFEF;border:1px dotted black;">  
-                  <p><q>I am so clever that sometimes I don't understand a single word of what I am saying.aragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.   
-                  </q> - <cite>Oscar Wilde</cite></p>  
-                  <button id="hide" style="padding: .5rem 1rem;background: #006669;color: white;border: 1px solid transparent;border-radius: .25rem;font-size: 1.08em;font-family: 'Lora', serif">Close</button>  
-                  </dialog>  
-                  <button id="show" style="padding: .5rem 1rem;background: #006669;color: white;border: 1px solid transparent;border-radius: .25rem;font-size: 1.08em;font-family: 'Lora', serif">Read More</button>  
-                  </div>  
-              </div>
-            </div>
 
-            <div class="post clearfix">
-              <div class="post-preview">
-                <h2>Job Opportunity for TE and BE</h2>
-                <i class="far fa-user"> Umang</i>
-                &nbsp;
-                <i class="far fa-calendar">  Sept 23, 2021</i>
-                <p class="preview-text">
-                  One to line description</p>
-                <div style="padding-left: 750px;">  
-                  <dialog id="myFirstDialog" style="width:50%;background-color:#F4FFEF;border:1px dotted black;">  
-                  <p><q>I am so clever that sometimes I don't understand a single word of what I am saying.aragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.   
-                  </q> - <cite>Oscar Wilde</cite></p>  
-                  <button id="hide" style="padding: .5rem 1rem;background: #006669;color: white;border: 1px solid transparent;border-radius: .25rem;font-size: 1.08em;font-family: 'Lora', serif">Close</button>  
-                  </dialog>  
-                  <button id="show" style="padding: .5rem 1rem;background: #006669;color: white;border: 1px solid transparent;border-radius: .25rem;font-size: 1.08em;font-family: 'Lora', serif">Read More</button>  
+              {% for post in posts%}
+                  <div class="post-preview">
+                    <h2>{{post.sno}}. {{post.title}}</h2>
+                    <i class="far fa-user">{{params['admin']}}</i>
+                    &nbsp;
+                    <i class="far fa-calendar">{{post.date}}</i>
+                    <p class="preview-text">{{post.content[0:56]}}...
+                    </p>
+                    <a href="/post/{{post.sno}}" class="btn read-more" >Read More</a>
+                    <hr>
                   </div>
-              </div>
             </div>
-            <div class="post clearfix">
-              <div class="post-preview">
-                <h2>Internships for TE and BE</h2>
-                <i class="far fa-user"> Abhijit</i>
-                &nbsp;
-                <i class="far fa-calendar">  Sept 23, 2021</i>
-                <p class="preview-text">
-                  One to line description
-                </p>
-                <div style="padding-left: 750px;">  
-                  <dialog id="myFirstDialog" style="width:50%;background-color:#F4FFEF;border:1px dotted black;">  
-                  <p><q>I am so clever that sometimes I don't understand a single word of what I am saying.aragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.   
-                  </q> - <cite>Oscar Wilde</cite></p>  
-                  <button id="hide" style="padding: .5rem 1rem;background: #006669;color: white;border: 1px solid transparent;border-radius: .25rem;font-size: 1.08em;font-family: 'Lora', serif">Close</button>  
-                  </dialog>  
-                  <button id="show" style="padding: .5rem 1rem;background: #006669;color: white;border: 1px solid transparent;border-radius: .25rem;font-size: 1.08em;font-family: 'Lora', serif">Read More</button>  
-                  </div>
-              </div>
+</li></a>
+              {% endfor %}
             </div>
-            
+            <div class="row-button">
+              <a class="button-button1" href="{{prev}}" style="margin-left: 50px; margin-top: 40px; padding: .4rem 1rem;background: #01484b;color: white;border: 1px solid transparent;border-radius: .25rem;font-size: 1.08em;font-family: 'Lora', serif">← Previous</a>
+              <a class="button-button1" href="{{nex}}" style="margin-left: 850px;  padding: .5rem 1rem;background: #01484b;color: white;border: 1px solid transparent;border-radius: .25rem;font-size: 1.08em;font-family: 'Lora', serif">Next →</a>
+            </div>    
           
           </div>
           <!-- // Main Content -->
 
-          <div class="row-button">
-              <button class="button-button1" style="margin-left: 50px; margin-top: 40px; padding: .4rem 1rem;background: #01484b;color: white;border: 1px solid transparent;border-radius: .25rem;font-size: 1.08em;font-family: 'Lora', serif">Previous</button>
-              <button class="button-button1" style="margin-left: 850px;  padding: .5rem 1rem;background: #01484b;color: white;border: 1px solid transparent;border-radius: .25rem;font-size: 1.08em;font-family: 'Lora', serif">Next</button>
-          </div> 
         </div>
         <!-- // Content --> 
   </div>

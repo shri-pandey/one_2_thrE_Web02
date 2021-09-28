@@ -1,0 +1,20 @@
+{% extends "inner-page.html" %}
+{% block body %}
+<style>
+h1{
+    margin-top: 100px
+}
+
+p .one{
+    margin:left: 50px
+}
+
+</style>
+<h1>{{post.title}}</h1>
+
+<hr>
+
+<p>{{post.content}} {{post.file}}</p>
+
+Posted by Admin on - {{post.date}}
+{% endblock %}

@@ -10,11 +10,14 @@
     "fb_url" : "https://www.facebook.com/aitpune",
     "website" : "https://www.aitpune.com/",
     "linkedin" : "https://www.linkedin.com/school/army-institute-of-technology-ait-pune/",
+    "tw_url" : "https://twitter.com/ait_pune?lang=en",
+    "instagram" : "https://www.instagram.com/ait.pune/?hl=en",
     "site_name" : "AIT Placement Cell",
     "mail_user" : "",
     "mail-password" : "",
     "admin_user" : "tpo@gmail.com",
     "admin_pass" : "Cheetah",
-    "upload_location" : "T:\\devlok_website\\uploads"
+    "upload_location" : "T:\\devlok_website\\uploads",
+    "no_of_posts" : 3
   }
 }
