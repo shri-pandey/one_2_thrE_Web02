@@ -223,4 +223,26 @@ def show_route(post_sno):
 	return render_template('post.html', params=params, post=post)
 
 
+@app.route("/stud-posts")
+def student_posts():
+	posts = Posts.query.filter_by().all()
+	last = math.ceil(len(posts) / int(params['no_of_posts']))
+	page = request.args.get('page')
+	if not str(page).isnumeric():
+		page = 1
+	page = int(page)
+	posts = posts[(page - 1) * int(params['no_of_posts']):(page - 1) * int(params['no_of_posts']) + int(
+		params['no_of_posts'])]
+	if page == 1:
+		prev = "#"
+		nex = "/recent-post?page=" + str(page + 1)
+	elif page == last:
+		prev = "/recent-post?page=" + str(page - 1)
+		nex = "#"
+	else:
+		prev = "/recent-post?page=" + str(page - 1)
+		nex = "/recent-post?page=" + str(page + 1)
+	return render_template('Students posts.html', params=params, posts=posts, prev=prev, nex=nex)
+
+
 app.run(debug=True)

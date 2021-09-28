@@ -10,6 +10,7 @@
               <li><a href="/recent-post">Recent Posts</a></li>
               <li><a href="/manage-post">Manage Posts</a></li>
               <li><a href="/manage-user">Manage Users</a></li>
+              <img src="https://www.pngkey.com/png/full/263-2636557_icon-admin-cartoon.png" style="margin-top: 320px;width: 300px;">
               
           </ul>
       </div>
@@ -21,8 +22,12 @@
         <div class="content clearfix" style="width: 1150px;padding-bottom: 50px; background-color: #A9C9FF;background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);">
 
           <!-- Main Content -->
-          <div class="main-content" style="padding-left: 50px;">
-            <h1 class="recent-post-title" style="padding-top: 100px;  padding-bottom: 50px;font-weight: bold;">Recent Posts</h1>
+          <div class="main-content" style="padding-left: 60px;">
+            <div class="row-button" style="margin-top: 100px;">
+              <a class="button-button1" href="{{prev}}" style=" padding: .4rem 1rem;background: #01484b;color: white;border: 1px solid transparent;border-radius: .25rem;font-size: 1.08em;font-family: 'Lora', serif">← Previous</a>
+              <a class="button-button1" href="{{nex}}" style=" margin-left: 700px; padding: .5rem 1rem;background: #01484b;color: white;border: 1px solid transparent;border-radius: .25rem;font-size: 1.08em;font-family: 'Lora', serif">Next →</a>
+            </div>
+            <h1 class="recent-post-title" style="  padding-bottom: 50px;font-weight: bold;">Recent Posts</h1>
 
             <div class="post clearfix">
 
@@ -40,11 +45,9 @@
             </div>
 </li></a>
               {% endfor %}
+               
             </div>
-            <div class="row-button">
-              <a class="button-button1" href="{{prev}}" style="margin-left: 50px; margin-top: 40px; padding: .4rem 1rem;background: #01484b;color: white;border: 1px solid transparent;border-radius: .25rem;font-size: 1.08em;font-family: 'Lora', serif">← Previous</a>
-              <a class="button-button1" href="{{nex}}" style="margin-left: 850px;  padding: .5rem 1rem;background: #01484b;color: white;border: 1px solid transparent;border-radius: .25rem;font-size: 1.08em;font-family: 'Lora', serif">Next →</a>
-            </div>    
+               
           
           </div>
           <!-- // Main Content -->

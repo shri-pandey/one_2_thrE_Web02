@@ -23,7 +23,7 @@
 .video-container {
   position: absolute;
   top:-50px;
-  left:100;
+  left:5;
   height:auto;
   width : 100%;
 }
@@ -38,12 +38,21 @@ iframe {
 
 .color-overlay {
   position :absolute;
+  object-fit: cover;
   top:0;
   left:0;
-  background-color: rgb(191, 213, 216);
   width :100%;
   height : 100vh;
   opacity : 0.5;
+}
+.ovverlay-vid{
+  position :absolute;
+  top:0;
+  left:0;
+  width :100%;
+  height : 100vh;
+  background: rgba(rgb(236, 168, 168), rgb(192, 245, 192), rgb(0, 0, 255), );
+
 }
 
 *{
@@ -615,7 +624,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 15;
   font-style: italic;
   padding: 0;
-  margin: 0 0 40px 388px;
+  margin: 0 0 40px 308px;
 }
 
 #footer .social-links {
