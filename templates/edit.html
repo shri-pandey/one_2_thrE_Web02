@@ -1,33 +1,31 @@
 {% extends "admin.html" %}
 {% block body %}
 
-<h1>Edit your File</h1>
+<body style= "background-color: #A9C9FF;background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);">
+  <h1 style="margin-top: 100px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Edit your File</h1>
 
-<form action="/edit/{{post.sno}}" method="post" role="form" class="php-email-form">
-            <div class="row">
-              <div class="col-md-6 form-group">
-              <label>Title</label>
-                <input type="text" name="title" class="form-control" id="title" value="{{post.title}}" placeholder="Title">
-              </div>
-              <div class="col-md-6 form-group mt-3 mt-md-0">
-              <label>Category</label>
-                <input type="text" class="form-control" name="category" id="category" value="{{post.category}}" placeholder="Category">
-              </div>
-            </div>
-            <div class="form-group mt-3">
-            <label>File</label>
-              <input type="text" class="form-control" name="file" id="file" value="{{post.file}}" placeholder="File" required
-              data-validation-required-message="Please enter a related subject.">
-            </div>
-            <div class="form-group mt-3">
-            <label>Content</label>
-              <textarea class="form-control" name="content" id="content" rows="5" placeholder="Content">{{post.content}}</textarea>
-            </div>
-            <div class="my-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-            </div>
-            <div class="text-center"><button type="submit">Submit</button></div>
-          </form>
+  <form action="/edit/{{post.sno}}" method="post" role="form" >
+      <div class="row">
+        <div class="col-md-6 form-group">
+        <label>Title</label>
+          <input type="text" name="title" class="form-control" id="title" value="{{post.title}}" placeholder="Title">
+        </div>
+        <div class="col-md-6 form-group mt-3 mt-md-0">
+        <label>Category</label>
+          <input type="text" class="form-control" name="category" id="category" value="{{post.category}}" placeholder="Category">
+        </div>
+      </div>
+      <div class="form-group mt-3">
+      <label>File</label>
+        <input type="text" class="form-control" name="file" id="file" value="{{post.file}}" placeholder="File" required
+        data-validation-required-message="Please enter a related subject.">
+      </div>
+      <div class="form-group mt-3">
+      <label>Content</label>
+        <textarea class="form-control" name="content" id="content" rows="5" placeholder="Content">{{post.content}}</textarea>
+      </div>
+      <div class="text-center"><button type="submit"class="btn btn-big">Submit</button></div>
+    </form>
+
+</body>
 {% endblock %}

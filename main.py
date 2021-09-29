@@ -146,7 +146,13 @@ def contact():
                           sender=email,
                           recipients=[params['mail_user']],
                           body=message)
-    return render_template('contact.html', params=params)
+        return "Message Sent."
+    return render_template("Contact.html", params=params)
+
+
+@app.route("/welcome")
+def welcome():
+    return render_template('Welcome.html', params=params)
 
 
 @app.route("/add-post")
