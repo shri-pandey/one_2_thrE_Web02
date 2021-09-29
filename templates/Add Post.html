@@ -30,25 +30,25 @@
 
                     <h2 class="page-title">Add Posts</h2>
 
-                    <form action="/add-post" method="post">
+                    <form action="/add-post/0" method="post">
                         <div>
                             <label>Title</label>
-                            <input type="text" name="title" class="text-input">
+                            <input type="text" name="title" id="title" class="text-input">
                         </div>
                         <div>
-                            <label>Body</label>
-                            <textarea name="body" id="body"></textarea>
-                        </div>
-                        <div>
-                            <label>Image</label>
-                            <input type="file" name="image" class="text-input">
-                        </div>
-                        <div>
-                            <label>Topic</label>
-                            <select name="topic" class="text-input">
+                            <label>Category</label>
+                            <select name="category" id="category" class="text-input">
                                 <option value="Internships">Interships</option>
-                                <option value="TPO">PPO</option>
+                                <option value="TPO">Placement</option>
                             </select>
+                        </div>
+                        <div>
+                            <label>Content</label>
+                            <textarea name="content" id="content"></textarea>
+                        </div>
+                        <div>
+                            <label>File</label>
+                            <input type="file" name="file" id="file" class="text-input">
                         </div>
                         <div>
                             <button type="submit" class="btn btn-big">Add Post</button>

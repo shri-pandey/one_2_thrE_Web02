@@ -7,7 +7,7 @@
         <div class="admin-wrapper">
 
             <!-- Left Sidebar -->
-            <div class="left-sidebar" style="padding-top: 80px;">
+            <div class="left-sidebar" style="padding-top: 187px;">
                 <ul>
                     <li><a href="/recent-post">Recent Posts</a></li>
                     <li><a href="/manage-post">Manage Posts</a></li>
@@ -33,27 +33,26 @@
                         <thead>
                             <th>SN</th>
                             <th>Title</th>
-                            <th>Company</th>
+                            <th>Date</th>
                             <th colspan="3">Action</th>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>This is the first post</td>
-                                <td>Microsoft</td>
-                                <td><a href="#" class="edit">edit</a></td>
-                                <td><a href="#" class="delete">delete</a></td>
-                                
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>This is the second post</td>
-                                <td>Google</td>
-                                <td><a href="#" class="edit">edit</a></td>
-                                <td><a href="#" class="delete">delete</a></td>
-                            </tr>
+                            {% for post in posts%}
+                                <tr>
+                                    <td>{{post.sno}}</td>
+                                    <td>{{post.title}}</td>
+                                    <td>{{post.date}}</td>
+                                    <td><a href="/edit/{{post.sno}}" class="edit">Edit</a></td>
+                                    <td><a href="#" class="delete">Delete</a></td>
+                                    
+                                </tr>
+                            {% endfor %}
                         </tbody>
                     </table>
+                    <div class="row-button">
+                        <a class="button-button1" href="{{prev}}" style="margin-left: 50px; margin-top: 40px; padding: .4rem 1rem;background: #01484b;color: white;border: 1px solid transparent;border-radius: .25rem;font-size: 1.08em;font-family: 'Lora', serif">← Previous</a>
+                        <a class="button-button1" href="{{nex}}" style="margin-left: 850px;  padding: .5rem 1rem;background: #01484b;color: white;border: 1px solid transparent;border-radius: .25rem;font-size: 1.08em;font-family: 'Lora', serif">Next →</a>
+                    </div>
 
                 </div>
 
