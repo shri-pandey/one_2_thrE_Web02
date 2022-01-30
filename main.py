@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, session, redirect
 import mysql.connector
-import pyrebase
+# import pyrebase
 from flask_mail import Mail
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -30,9 +30,9 @@ app.config.update(
 mail = Mail(app)
 if local_server:
     app.config['SQLALCHEMY_DATABASE_URI'] = params['local_uri']
-else:
-    firebase = pyrebase.initialize_app(params['prod_uri'])
-    storage = firebase.storage()
+# else:
+    # firebase = pyrebase.initialize_app(params['prod_uri'])
+    # storage = firebase.storage()
 
 
 db = SQLAlchemy(app)
